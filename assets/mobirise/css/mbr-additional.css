@@ -4563,7 +4563,7 @@ a {
 }
 .cid-vb6GbsHQqK {
   padding-top: 0rem;
-  padding-bottom: 6rem;
+  padding-bottom: 0rem;
   background-color: #edefeb;
 }
 .cid-vb6GbsHQqK .mbr-iconfont {
@@ -4652,8 +4652,99 @@ a {
 .cid-vb6GbsHQqK .mbr-iconfont {
   color: #000000;
 }
+.cid-vb7akAkHsz {
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  background-color: #edefeb;
+}
+.cid-vb7akAkHsz .mbr-iconfont {
+  font-size: 1.2rem !important;
+  font-family: 'Moririse2' !important;
+  color: white;
+  transition: all 0.3s;
+  transform: rotate(180deg);
+  padding-left: 0.5rem;
+}
+.cid-vb7akAkHsz .panel-group {
+  border: none;
+}
+.cid-vb7akAkHsz .card-header {
+  padding: 0rem;
+}
+@media (max-width: 767px) {
+  .cid-vb7akAkHsz .card-header {
+    padding: 0rem;
+  }
+}
+.cid-vb7akAkHsz .panel-body {
+  padding: 0rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.cid-vb7akAkHsz .img-col {
+  padding: 0;
+}
+.cid-vb7akAkHsz .img-item {
+  height: 100%;
+}
+.cid-vb7akAkHsz img {
+  height: 100%;
+  object-fit: cover;
+}
+.cid-vb7akAkHsz .collapsed span {
+  transform: rotate(0deg);
+}
+.cid-vb7akAkHsz .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-vb7akAkHsz p {
+  margin-bottom: 0.3rem;
+}
+.cid-vb7akAkHsz .panel-title-edit {
+  color: #000000;
+}
+.cid-vb7akAkHsz .card .card-header {
+  background-color: transparent;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 2rem;
+}
+.cid-vb7akAkHsz .card {
+  background: #ffffff;
+  padding: 2.25rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .cid-vb7akAkHsz .card {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-vb7akAkHsz .card {
+    margin-bottom: 1rem;
+    padding: 2rem 1.5rem;
+  }
+}
+.cid-vb7akAkHsz .panel-text {
+  color: #000000;
+}
+.cid-vb7akAkHsz .mbr-section-title {
+  text-align: center;
+  color: #000000;
+}
+.cid-vb7akAkHsz .mbr-section-subtitle {
+  color: #000000;
+  text-align: center;
+}
+.cid-vb7akAkHsz .panel-title-edit,
+.cid-vb7akAkHsz .mbr-iconfont {
+  color: #000000;
+}
 .cid-vb6xO11SzP {
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #edefeb;
 }
