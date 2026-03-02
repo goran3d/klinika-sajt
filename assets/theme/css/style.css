@@ -979,7 +979,7 @@ blockquote {
 }
 
 .doctor-name {
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 8px;
   position: relative;
@@ -1004,8 +1004,8 @@ blockquote {
 }
 
 .premium-bio p {
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: 1.4rem;
+  line-height: 1.3;
   margin-bottom: 20px;
 }
 
