@@ -1098,3 +1098,16 @@ blockquote {
   margin-top: 15px;
   color: #555;
 }
+
+/* ikonice u kontakt sekciji */
+
+.contact-line i {
+    color: #53b514; 
+    font-size: 18px;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.contact-line {
+    line-height: 1.8;
+}
