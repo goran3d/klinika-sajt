@@ -32,46 +32,44 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=iEuo24"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=iEuo24" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+	
 	<script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@graph": [
-
-  {
-   "@type": "MedicalClinic",
-   "@id": "https://drkoturovic.me/#clinic",
-   "name": "Očna bolnica Oftalens Dr Koturović",
-   "address": {
-     "@type": "PostalAddress",
-     "addressLocality": "Podgorica",
-     "addressCountry": "ME"
-   }
-  },
-
-  {
-   "@type": ["Person", "IndividualPhysician"],
-   "name": "Dr Zoran Koturović",
-   "medicalSpecialty": "Surgical",
-   "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
-   "worksFor": {
-     "@id": "https://drkoturovic.me/#clinic"
-   }
-  },
-
-  {
-   "@type": ["Person", "IndividualPhysician"],
-   "name": "Dr Haris Kujundžić",
-   "medicalSpecialty": "Surgical",
-   "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
-   "worksFor": {
-     "@id": "https://drkoturovic.me/#clinic"
-   }
-  }
-
- ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Person", "IndividualPhysician"],
+      "name": "Dr Zoran Koturović",
+      "medicalSpecialty": "Surgical",
+      "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
+      "worksFor": {
+        "@type": "MedicalClinic",
+        "name": "Očna bolnica Oftalens Dr Koturović"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Podgorica",
+        "addressCountry": "ME"
+      }
+    },
+    {
+      "@type": ["Person", "IndividualPhysician"],
+      "name": "Dr Haris Kujundžić",
+      "medicalSpecialty": "Surgical",
+      "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
+      "worksFor": {
+        "@type": "MedicalClinic",
+        "name": "Očna bolnica Oftalens Dr Koturović"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Podgorica",
+        "addressCountry": "ME"
+      }
+    }
+  ]
 }
 </script>
-
 
 	<script type="application/ld+json">
 {
