@@ -34,39 +34,41 @@
 
 	<script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Physician",
-      "name": "Dr Zoran Koturović",
-      "medicalSpecialty": "Surgical",
-	  "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
-      "worksFor": {
-        "@type": "MedicalClinic",
-        "name": "Očna bolnica Oftalens Dr Koturović"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Podgorica",
-        "addressCountry": "ME"
-      }
-    },
-    {
-      "@type": "Physician",
-      "name": "Dr Haris Kujundžić",
-      "medicalSpecialty": "Surgical",
-      "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
-      "worksFor": {
-        "@type": "MedicalClinic",
-        "name": "Očna bolnica Oftalens Dr Koturović"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Podgorica",
-        "addressCountry": "ME"
-      }
-    }
-  ]
+ "@context": "https://schema.org",
+ "@graph": [
+
+  {
+   "@type": "MedicalClinic",
+   "@id": "https://drkoturovic.me/#clinic",
+   "name": "Očna bolnica Oftalens Dr Koturović",
+   "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Podgorica",
+     "addressCountry": "ME"
+   }
+  },
+
+  {
+   "@type": "Physician",
+   "name": "Dr Zoran Koturović",
+   "medicalSpecialty": "Surgical",
+   "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
+   "worksFor": {
+     "@id": "https://drkoturovic.me/#clinic"
+   }
+  },
+
+  {
+   "@type": "Physician",
+   "name": "Dr Haris Kujundžić",
+   "medicalSpecialty": "Surgical",
+   "additionalType": "https://en.wikipedia.org/wiki/Ophthalmology",
+   "worksFor": {
+     "@id": "https://drkoturovic.me/#clinic"
+   }
+  }
+
+ ]
 }
 </script>
 
