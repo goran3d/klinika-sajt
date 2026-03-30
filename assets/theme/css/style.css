@@ -1161,20 +1161,10 @@ blockquote {
 }
 
 /* Hide default HTML checkbox */
-/* Fixed selector to match .theme-switch */
-.theme-switch {
- font-size: 1rem;
- position: relative;
- display: inline-block;
- width: 4em;
- height: 2em;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
- opacity: 0;
- width: 0;
- height: 0;
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 /* The slider */
