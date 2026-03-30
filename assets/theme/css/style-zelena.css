@@ -1169,6 +1169,9 @@ blockquote {
  cursor: pointer;
  inset: 0;
  background-color: #eee;
+ background-image: 
+    radial-gradient(circle at 3.4em 1em, lightgreen 0.15em, transparent 0.2em),
+    radial-gradient(circle at 0.6em 1em, #a57aff 0.15em, transparent 0.2em);
  transition: 0.4s;
  border-radius: 0.5em;
  box-shadow: 0 0.2em #dfd9d9;
@@ -1212,3 +1215,6 @@ input:checked+.slider:before {
     margin-top: 10px;
   }
 }
+
+
+
