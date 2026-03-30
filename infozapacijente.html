@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon-eye.svg">
+  <link id="favicon" rel="icon" type="image/svg+xml" href="assets/images/favicon-eye.svg">
   
   
   <title>Informacije za pacijente | Očna bolnica - Oftalens Dr Koturović Podgorica</title>
@@ -27,10 +27,14 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/animatecss/animate.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link id="css-ljubicasti" rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=ysf2HF"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=ysf2HF" type="text/css">
+  
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-zelena.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css">
+  <link id="theme-ljubicasta-svetla" rel="stylesheet" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css" type="text/css">
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <script type="application/ld+json">
@@ -56,7 +60,7 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu1 cid-vb1EEWWbrC" once="menu" id="menu01-1m">
+  <section data-bs-version="5.1" class="menu menu1 cid-vb1EEWWbrC" once="menu" id="menu01-1f">
 	
 
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -86,9 +90,15 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link link text-primary display-4" href="infozapacijente.html">Info za pacijente</a>
-					</li><li class="nav-item"><a class="nav-link link text-primary display-4" href="faq.html">Česta pitanja</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="kontakt.html">Kontakt</a></li></ul>
-				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-7" href="kontakt.html">Progledajte!</a></div>
+					</li><li class="nav-item"><a class="nav-link link text-primary display-4" href="faq.html">Česta pitanja</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="kontakt.html">Kontakt</a></li>
+				</ul>
+					
+				<div class="navbar-buttons mbr-section-btn d-flex align-items-center">
+					<label class="theme-switch">
+    					<input type="checkbox" id="themeToggle">
+    					<span class="slider"></span>
+  					</label>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -147,21 +157,21 @@
 
       <!-- Clinic info -->
       <div class="col-12 col-md-6 col-lg-4">
-        <h5 class="mbr-fonts-style display-5 mb-3" style="color: #98e36a;">
+        <h5 class="mbr-fonts-style display-5 mb-3 footer-heading-text">
           <strong>Oftalens Dr Koturović</strong>
         </h5>
-        <p class="mbr-fonts-style display-7 mb-3" style="color: #d0ddc7;">
+        <p class="mbr-fonts-style display-7 mb-3 footer-text">
           Savremena očna bolnica sa fokusom na preciznu dijagnostiku, laserske zahvate i očnu hirurgiju.
         </p>
       </div>
 
       <!-- Contact -->
       <div class="col-12 col-md-6 col-lg-4">
-  		<h6 class="mbr-fonts-style display-7 mb-3" style="color: #98e36a;">
+  		<h6 class="mbr-fonts-style display-7 mb-3 footer-heading-text">
     	<strong>Kontakt</strong>
   		</h6>
 
-  		<p class="mbr-fonts-style display-7 mb-2 footer-contact-line" style="color: #d0ddc7;">
+  		<p class="mbr-fonts-style display-7 mb-2 footer-contact-line footer-text">
     		<i class="bi bi-geo-alt me-2"></i>
     		Stara Varoš, blok 7<br>
     		(Bratstva i Jedinstva bb, vojna zgrada), Podgorica
@@ -169,62 +179,61 @@
 
   		<p class="mbr-fonts-style display-7 mb-2 footer-contact-line">
     		<i class="bi bi-telephone me-2"></i>
-    		<a href="tel:067323655" class="text-primary">067 32 36 55</a><br>
+    		<a href="tel:067323655" class="footer-link-text">067 32 36 55</a><br>
     		<i class="bi bi-telephone me-2"></i>
-    		<a href="tel:069855909" class="text-primary">069 8 55 909</a>
+    		<a href="tel:069855909" class="footer-link-text">069 8 55 909</a>
   		</p>
 
-  		<p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-    		<i class="bi bi-envelope me-2"></i>
-    		<span class="email"></span>
+  		<p class="mbr-fonts-style display-7 mb-2 footer-contact-line">
+    		<i class="bi bi-envelope me-2 "></i>
+    		<span class="email email-rose"></span>
   		</p>
 		  <p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-          <a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener" class="text-primary">
-        <i class="bi bi-instagram me-2" style="margin-right:6px;"></i> Instagram
-      </a>
-    </p>
+          	<a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener" class="footer-link-text">
+        	<i class="bi bi-instagram me-2" style="margin-right:6px;"></i> Instagram
+      	  </a>
+        </p>
         <p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-          <a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener" class="text-primary">
-        <i class="bi bi-facebook me-2" style="margin-right:6px;"></i> Facebook
+          	<a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener" class="footer-link-text">
+        	<i class="bi bi-facebook me-2" style="margin-right:6px;"></i> Facebook
           </a>
         </p>
 	</div>
 
-
       <!-- Quick links -->
       <div class="col-12 col-md-6 col-lg-2">
-        <h6 class="mbr-fonts-style display-7 mb-3" style="color: #98e36a;">
+        <h6 class="mbr-fonts-style display-7 mb-3 footer-heading-text">
           <strong>Linkovi</strong>
         </h6>
         <ul class="list-unstyled mbr-fonts-style display-7">
           <li class="mb-2">
-            <a href="index.html" class="text-primary">Naslovna</a>
+            <a href="index.html" class="footer-link-text">Naslovna</a>
           </li>
           <li class="mb-2">
-            <a href="onama.html" class="text-primary">O nama</a>
+            <a href="onama.html" class="footer-link-text">O nama</a>
           </li>
           <li class="mb-2">
-            <a href="usluge.html" class="text-primary">Usluge</a>
+            <a href="usluge.html" class="footer-link-text">Usluge</a>
           </li>
 			<li class="mb-2">
-            <a href="faq.html" class="text-primary">Česta pitanja</a>
+            <a href="faq.html" class="footer-link-text">Česta pitanja</a>
           </li>
 			<li class="mb-2">
-            <a href="infozapacijente.html" class="text-primary">Informacije za pacijente</a>
+            <a href="infozapacijente.html" class="footer-link-text">Informacije za pacijente</a>
           </li>
           <li>
-            <a href="kontakt.html" class="text-primary">Kontakt</a>
+            <a href="kontakt.html" class="footer-link-text">Kontakt</a>
           </li>
         </ul>
       </div>
 
       <!-- Working hours -->
       <div class="col-12 col-md-6 col-lg-2">
- 			 <h6 class="mbr-fonts-style display-7 mb-3" style="color: #98e36a;">
+ 			 <h6 class="mbr-fonts-style display-7 mb-3 footer-heading-text">
     			<strong>Radno vrijeme</strong>
   			</h6>
 
-  			<p class="mbr-fonts-style display-7 mb-0 footer-contact-line" style="color: #d0ddc7;">
+  			<p class="mbr-fonts-style display-7 mb-0 footer-contact-line footer-text">
     			Ponedjeljak – Petak<br>
 				<i class="bi bi-clock me-2"></i>
     			10–14 h<br>
@@ -233,20 +242,21 @@
   			</p>
 		</div>
 
+
     </div>
 
     <!-- Divider -->
-    <hr class="mt-4 mb-3" style="color: #98e36a;">
+    <hr class="mt-4 mb-3 divider-line">
 
     <!-- Bottom line -->
     <div class="row">
       <div class="col-12 col-md-6 text-center text-md-start">
-        <p class="mbr-fonts-style display-7 mb-0" style="color: #d0ddc7; font-size: 0.85rem;">
+        <p class="mbr-fonts-style display-7 mb-0 footer-text" style="font-size: 0.85rem;">
           © 2026 Očna bolnica - Oftalens Dr Koturović
         </p>
       </div>
       <div class="col-12 col-md-6 text-center text-md-end">
-        <p class="mbr-fonts-style display-7 mb-0" style="color: #d0ddc7; font-size: 0.85rem">
+        <p class="mbr-fonts-style display-7 mb-0 footer-text" style="font-size: 0.85rem">
           Sva prava zadržana
         </p>
       </div>
@@ -254,11 +264,12 @@
 
   </div>
 </section>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
 	<script src="assets/theme/js/email.js"></script>
+	<script src="assets/theme/js/tema-dugme.js"></script>
   </body>
 </html>

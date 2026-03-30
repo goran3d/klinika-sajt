@@ -991,7 +991,7 @@ blockquote {
   display: block;
   width: 60px;
   height: 3px;
-  background-color: #df84ff;
+  background-color: #98e36a;
   margin-top: 8px;
 }
 
@@ -1102,7 +1102,7 @@ blockquote {
 /* ikonice u kontakt sekciji */
 
 .contact-line i {
-    color: #8012c3; 
+    color: #53b514; 
     font-size: 18px;
     vertical-align: middle;
     opacity: 0.8;
@@ -1115,8 +1115,7 @@ blockquote {
 .footer-contact-line i {
     font-size: 16px;
     opacity: 0.85;
-    /* color: #df84ff; /* tvoja zelena iz footera */
-    color: #ffd7ef;
+    color: #98e36a; /* tvoja zelena iz footera */
 }
 
 .footer-contact-line {
@@ -1124,29 +1123,26 @@ blockquote {
 }
 
 .footer-heading-text {
-  color: #df84ff;
-}
-
-.footer-link-text {
-  color: #ffd7ef;
+  color: #98e36a;
 }
 
 .email-violet a {
-  color: #8012c3;
+  color: #53b514;
   text-decoration: none; /* optional */
 }
 
 .email-rose a{
-  color: #ffd7ef;
+  color: #53b514;
 }
 
 .footer-text {
-  color: #d1c7dd;
+  color: #d0ddc7;
 }
 
 .divider-line {
-  color: #df84ff;
+  color: #98e36a;
 }
+
 /* toggle dugme za temu */
 
 /* The switch - the box around the slider */
@@ -1216,4 +1212,3 @@ input:checked+.slider:before {
     margin-top: 10px;
   }
 }
-
