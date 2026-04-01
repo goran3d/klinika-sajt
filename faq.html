@@ -33,7 +33,28 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-zelena.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css">
   <link id="theme-ljubicasta-svetla" rel="stylesheet" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css" type="text/css">
-	
+  <script>
+    (function () {
+      var currentTheme = localStorage.getItem("theme") || "ljubicasta";
+      var root = document.documentElement;
+      var favicon = document.getElementById("favicon");
+      var cssPromena = document.getElementById("css-ljubicasti");
+      var themeLink = document.getElementById("theme-ljubicasta-svetla");
+
+      root.setAttribute("data-theme", currentTheme);
+
+      if (currentTheme === "zelena") {
+        if (themeLink) themeLink.href = "assets/mobirise/css/mbr-additional-zelena.css";
+        if (cssPromena) cssPromena.href = "assets/theme/css/style-zelena.css";
+        if (favicon) favicon.href = "assets/images/favicon-eye-green.svg";
+      } else {
+        if (themeLink) themeLink.href = "assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css";
+        if (cssPromena) cssPromena.href = "assets/theme/css/style.css";
+        if (favicon) favicon.href = "assets/images/favicon-eye-violet.svg";
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <script type="application/ld+json">
@@ -187,13 +208,13 @@
 					</div>
 					<div id="bootstrap-accordion_18" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-1">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_18" aria-expanded="false" aria-controls="collapse1">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">1. Koliko često treba ići na pregled očiju?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse1_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
+							<div id="collapse1_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-1" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Osobe bez tegoba trebalo bi da obave pregled jednom u 1–2 godine. <strong><em>Poslije 40. godine</em></strong> i kod <strong><em>hroničnih oboljenja (npr. dijabetes, glaukom)</em></strong> preporučuju se <strong><em>redovne kontrole</em></strong> prema savjetu ljekara.
@@ -202,13 +223,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-2">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_18" aria-expanded="false" aria-controls="collapse2">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">2. Da li je pregled očiju bolan?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse2_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
+							<div id="collapse2_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-2" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Većina pregleda je <strong>potpuno bezbolna</strong>. Neki testovi uključuju kapi za širenje zenica, koje mogu kratkotrajno zamutiti vid, ali ne izazivaju bol.
@@ -217,13 +238,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-3">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_18" aria-expanded="false" aria-controls="collapse3">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">3. Kako da znam da li mi treba nova dioptrija?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse3_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
+							<div id="collapse3_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-3" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Ako primetite <strong>zamor očiju, glavobolju, zamućen vid ili teškoće pri čitanju i radu na računaru</strong>, vrijeme je za kontrolu dioptrije.
@@ -244,13 +265,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-4">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_18" aria-expanded="false" aria-controls="collapse4">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">4. Šta je OCT i zašto se radi?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse4_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
+							<div id="collapse4_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-4" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										OCT je <strong>bezbolan</strong> snimak oka koji pokazuje fine slojeve mrežnjače i očnog živca. Pomaže u <strong>ranom otkrivanju i praćenju bolesti</strong> kao što su glaukom, makularna degeneracija i dijabetičke promene.</p>
@@ -258,13 +279,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-5">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_18" aria-expanded="false" aria-controls="collapse5">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">5. Kada je potrebna operacija katarakte?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse5_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
+							<div id="collapse5_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-5" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Operacija se preporučuje kada katarakta počne da smeta svakodnevnim aktivnostima, kao što su čitanje, vožnja ili gledanje televizije.</p>
@@ -272,13 +293,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-6">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_18" aria-expanded="false" aria-controls="collapse6">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">6. Da li je operacija katarakte bolna i koliko traje oporavak?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse6_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
+							<div id="collapse6_18" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-6" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_18">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Operacija se radi u <strong>lokalnoj anesteziji i bezbolna je</strong>. Sam zahvat traje oko 10–15 minuta, a <strong>vid se obično poboljšava u roku od nekoliko dana</strong>.
@@ -303,13 +324,13 @@
 					
 					<div id="bootstrap-accordion_19" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-7">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_19" aria-expanded="false" aria-controls="collapse1">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">7. Da li mogu normalno da funkcionišem posle operacije oka?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse1_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
+							<div id="collapse1_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-7" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Većina pacijenata se brzo vraća svakodnevnim aktivnostima. Potrebno je koristiti propisane kapi i pridržavati se savjeta ljekara tokom oporavka.
@@ -318,13 +339,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-8">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_19" aria-expanded="false" aria-controls="collapse2">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">8. Da li glaukom može da se izleči?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse2_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
+							<div id="collapse2_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-8" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Glaukom se <strong>ne može potpuno izliječiti</strong>, ali se uz redovnu terapiju i kontrole <strong>može uspješno držati pod kontrolom i spriječiti gubitak vida</strong>.
@@ -333,13 +354,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-9">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_19" aria-expanded="false" aria-controls="collapse3">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">9. Da li mogu nositi kontaktna sočiva ako imam dioptriju?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse3_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
+							<div id="collapse3_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-9" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										<strong>U većini slučajeva – da</strong>. Nakon pregleda, ljekar određuje da li su kontaktna sočiva odgovarajuća za vaše oči i preporučuje odgovarajuću vrstu.
@@ -348,13 +369,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
+							<div class="card-header" role="tab" id="heading-faq-10">
 								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_19" aria-expanded="false" aria-controls="collapse4">
 									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">10. Koliko traje kompletan pregled u klinici?</h6>
 									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
 								</a>
 							</div>
-							<div id="collapse4_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
+							<div id="collapse4_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="heading-faq-10" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_19">
 								<div class="panel-body">
 									<p class="mbr-fonts-style panel-text display-7">
 										Standardni pregled <strong>obično traje 20–30 minuta</strong>. Ako su potrebna dodatna snimanja ili širenje zenica, pregled može trajati duže.
@@ -409,12 +430,12 @@
     		<span class="email email-rose"></span>
   		</p>
 		  <p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-          	<a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener" class="footer-link-text">
+          	<a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener noreferrer" class="footer-link-text">
         	<i class="bi bi-instagram me-2" style="margin-right:6px;"></i> Instagram
       	  </a>
         </p>
         <p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-          	<a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener" class="footer-link-text">
+          	<a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener noreferrer" class="footer-link-text">
         	<i class="bi bi-facebook me-2" style="margin-right:6px;"></i> Facebook
           </a>
         </p>

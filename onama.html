@@ -33,7 +33,28 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-zelena.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css">
   <link id="theme-ljubicasta-svetla" rel="stylesheet" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css" type="text/css">
-  
+  <script>
+    (function () {
+      var currentTheme = localStorage.getItem("theme") || "ljubicasta";
+      var root = document.documentElement;
+      var favicon = document.getElementById("favicon");
+      var cssPromena = document.getElementById("css-ljubicasti");
+      var themeLink = document.getElementById("theme-ljubicasta-svetla");
+
+      root.setAttribute("data-theme", currentTheme);
+
+      if (currentTheme === "zelena") {
+        if (themeLink) themeLink.href = "assets/mobirise/css/mbr-additional-zelena.css";
+        if (cssPromena) cssPromena.href = "assets/theme/css/style-zelena.css";
+        if (favicon) favicon.href = "assets/images/favicon-eye-green.svg";
+      } else {
+        if (themeLink) themeLink.href = "assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css";
+        if (cssPromena) cssPromena.href = "assets/theme/css/style.css";
+        if (favicon) favicon.href = "assets/images/favicon-eye-violet.svg";
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 	
@@ -322,12 +343,12 @@
                             <li class="mbr-text item-wrap"><strong>Adresa</strong>: Stara varoš, blok 7 (Bratstva i Jedinstva bb, vojna zgrada), Podgorica 81000</li>
                             <li class="mbr-text item-wrap"><strong>Radno vrijeme</strong>: Ponedjeljak - Petak: 10-14 h,  17-21 h</li>
 							<li class="mbr-text item-wrap mb-2"><strong>Društvene mreže:</strong><br>
-                              <a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" class="text-primary">
+                              <a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener noreferrer" class="text-primary">
                                 <i class="bi bi-instagram me-2" style="margin-right:6px;"></i>Instagram
                               </a>
                             </li>
                           <li class="mb-2">
-                              <a href="https://www.facebook.com/drKoturovic/" target="_blank" class="text-primary">
+                              <a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener noreferrer" class="text-primary">
                                 <i class="bi bi-facebook me-2" style="margin-right:6px;"></i>Facebook
                               </a>
                             </li>
@@ -380,12 +401,12 @@
     		<span class="email email-rose"></span>
   		</p>
 		  <p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-          	<a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener" class="footer-link-text">
+          	<a href="https://www.instagram.com/oftalens_dr_koturovic/" target="_blank" rel="noopener noreferrer" class="footer-link-text">
         	<i class="bi bi-instagram me-2" style="margin-right:6px;"></i> Instagram
       	  </a>
         </p>
         <p class="mbr-fonts-style display-7 mb-0 footer-contact-line">
-          	<a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener" class="footer-link-text">
+          	<a href="https://www.facebook.com/drKoturovic/" target="_blank" rel="noopener noreferrer" class="footer-link-text">
         	<i class="bi bi-facebook me-2" style="margin-right:6px;"></i> Facebook
           </a>
         </p>

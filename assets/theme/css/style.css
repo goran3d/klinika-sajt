@@ -1206,6 +1206,11 @@ blockquote {
  bottom: 0.5em;
 }
 
+html[data-theme="zelena"] .slider:before {
+ transform: translateX(2em);
+ background: lightgreen;
+}
+
 input:checked+.slider:before {
  transform: translateX(2em);
  background: lightgreen;
@@ -1233,4 +1238,3 @@ input:checked+.slider:before {
     padding-left: 1.5rem;
 }
 */
-

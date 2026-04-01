@@ -34,7 +34,28 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-zelena.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css">
   <link id="theme-ljubicasta-svetla" rel="stylesheet" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css" type="text/css">
-  
+  <script>
+    (function () {
+      var currentTheme = localStorage.getItem("theme") || "ljubicasta";
+      var root = document.documentElement;
+      var favicon = document.getElementById("favicon");
+      var cssPromena = document.getElementById("css-ljubicasti");
+      var themeLink = document.getElementById("theme-ljubicasta-svetla");
+
+      root.setAttribute("data-theme", currentTheme);
+
+      if (currentTheme === "zelena") {
+        if (themeLink) themeLink.href = "assets/mobirise/css/mbr-additional-zelena.css";
+        if (cssPromena) cssPromena.href = "assets/theme/css/style-zelena.css";
+        if (favicon) favicon.href = "assets/images/favicon-eye-green.svg";
+      } else {
+        if (themeLink) themeLink.href = "assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css";
+        if (cssPromena) cssPromena.href = "assets/theme/css/style.css";
+        if (favicon) favicon.href = "assets/images/favicon-eye-violet.svg";
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <script type="application/ld+json">
