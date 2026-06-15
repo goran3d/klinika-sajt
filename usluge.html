@@ -78,13 +78,27 @@
   
   
   
+
+
+
+<style>
+/* Force navbar font sizes to prevent FOUC during theme switch */
+.navbar-caption { font-size: 1.15rem !important; }
+@media (min-width: 1200px) {
+  .navbar-dropdown .navbar-nav .nav-link {
+    font-size: 1.15rem !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+  }
+}
+</style>
 </head>
 <body>
   
   <section data-bs-version="5.1" class="menu menu1 cid-vb1EEWWbrC" once="menu" id="menu01-1f">
 	
 
-	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-xl">
 		<div class="container">
 			<div class="navbar-brand">
 				<span class="navbar-logo">
@@ -111,7 +125,8 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link link text-primary display-4" href="infozapacijente.html">Info za pacijente</a>
-					</li><li class="nav-item"><a class="nav-link link text-primary display-4" href="faq.html">Česta pitanja</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="kontakt.html">Kontakt</a></li>
+					</li><li class="nav-item"><a class="nav-link link text-primary display-4" href="faq.html">Česta pitanja</a></li><li class="nav-item"><a class="nav-link link text-primary display-4" href="novosti.html">Novosti</a></li>
+					<li class="nav-item"><a class="nav-link link text-primary display-4" href="kontakt.html">Kontakt</a></li>
 				</ul>
 					
 				<div class="navbar-buttons mbr-section-btn d-flex align-items-center">
@@ -516,6 +531,9 @@
           </li>
 			<li class="mb-2">
             <a href="infozapacijente.html" class="footer-link-text">Informacije za pacijente</a>
+          </li>
+          <li class="mb-2">
+            <a href="novosti.html" class="footer-link-text">Novosti</a>
           </li>
           <li>
             <a href="kontakt.html" class="footer-link-text">Kontakt</a>
