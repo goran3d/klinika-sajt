@@ -138,6 +138,8 @@
 				padding-right: 0.2rem !important;
 			}
 		}
+
+
 	</style>
 </head>
 
@@ -232,7 +234,7 @@
 		style="padding-top: 1rem; padding-bottom: 1rem;">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
-				<div class="col-4 col-md-3 col-lg-2">
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
 					<div class="image-wrapper"
 						style="border-radius: 12px; overflow: hidden; display: flex; justify-content: center; align-items: center; aspect-ratio: 3/2;">
 						<img src="assets/images/novosti/ascrs26.jpeg" alt="ASCRS 2026"
@@ -240,7 +242,7 @@
 					</div>
 				</div>
 
-				<div class="col-4 col-md-3 col-lg-2">
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
 					<div class="image-wrapper"
 						style="border-radius: 12px; overflow: hidden; display: flex; justify-content: center; align-items: center; aspect-ratio: 3/2;">
 						<img src="assets/images/novosti/ascrs26-washington.jpeg" alt="ASCRS Washington"
@@ -282,63 +284,90 @@
 		</div>
 	</section>
 
+	<style>
+		@media (max-width: 767px) {
+			#novosti-gallery .container {
+				padding-left: 2px !important;
+				padding-right: 2px !important;
+				max-width: 100% !important;
+			}
+			#novosti-gallery .row {
+				margin-left: -2px !important;
+				margin-right: -2px !important;
+			}
+			#novosti-gallery .col-6 {
+				padding: 2px !important;
+				margin-bottom: 0 !important;
+			}
+			#novosti-gallery .image-wrapper {
+				margin-bottom: 0 !important;
+			}
+		}
+	</style>
 	<section data-bs-version="5.1" class="gallery1 cid-vb0DCXYzfe" id="novosti-gallery"
 		style="padding-top: 1rem; padding-bottom: 2rem;">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+		<div class="container px-2 px-md-3">
+			<div class="row justify-content-center row-cols-lg-5 g-1 g-md-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/alcon-clareon-panoptix-pro.jpeg"
 							alt="Novi modeli intraokularnih sočiva"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 1;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/alcon-unity-vcs.jpeg"
 							alt="Najnovija mašina UNITY za hirurgiju katarakte"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 1;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/dr-koturovic-kongres-oftalmologa-nove-tehnologije-vasington.jpeg"
 							alt="Kongres oftalmologa Vašington"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 1;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/dr-koturovic-kongres-oftalomologa-ascrs-vasington.jpeg"
 							alt="Oftalens na kongresu u Vašingtonu"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 1;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/dr-koturovic-martinovic-trifkovic.jpeg"
 							alt="Doktori na kongresu"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/dr-zoran-koturovic-jugoslav-isakovic.jpeg"
 							alt="Dr Zoran Koturović i Jugoslav Isaković"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/kongres-oftalmologa-ascrs-vasington.jpeg"
 							alt="ASCRS Kongres Vašington"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3;">
 					</div>
 				</div>
-				<div class="col-12 col-md-4 col-lg-3 mb-4">
+				<div class="col-6 col-md-4">
 					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
 						<img src="assets/images/novosti/dr-koturovic-professor-Sheng-Lim.jpeg"
 							alt="Dr Koturović i profesor Sheng Lim"
+							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3;">
+					</div>
+				</div>
+				<div class="col-6 col-md-4">
+					<div class="image-wrapper" style="border-radius: 12px; overflow: hidden;">
+						<img src="assets/images/novosti/dr-koturovic-prof-Uday-Devgan.jpeg"
+							alt="Dr Koturović i profesor Uday Devgan"
 							style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3;">
 					</div>
 				</div>
@@ -356,7 +385,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-12 col-md-6 col-lg-4">
+				<div class="col-8 col-sm-6 col-md-6 col-lg-4">
 					<div class="mbr-media show-modal align-center"
 						style="max-width: 100%; border-radius: 12px; overflow: hidden;">
 						<video controls style="width: 100%; height: auto; display: block;">
