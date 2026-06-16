@@ -8,7 +8,7 @@
 
 	<title>Novosti - Oftalens Dr Koturović Podgorica</title>
 	<meta name="description"
-		content="Novosti i dešavanja - Dnevna bolnica za oftalmologiju Oftalens Dr Koturović. U korak sa najsavremenijim zbivanjima u oftalmologiji.">
+		content="Novosti - Dnevna bolnica za oftalmologiju Oftalens Dr Koturović. U korak sa najsavremenijim zbivanjima u oftalmologiji.">
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="Očna bolnica Oftalens Dr Koturović">
 	<meta name="geo.region" content="ME">
@@ -18,7 +18,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Novosti - Oftalens Dr Koturović Podgorica">
 	<meta property="og:description"
-		content="Novosti i dešavanja - Dnevna bolnica za oftalmologiju Oftalens Dr Koturović. U korak sa najsavremenijim zbivanjima u oftalmologiji.">
+		content="Novosti - Dnevna bolnica za oftalmologiju Oftalens Dr Koturović. U korak sa najsavremenijim zbivanjima u oftalmologiji.">
 	<meta property="og:url" content="https://drkoturovic.me/novosti.html">
 	<meta property="og:image" content="https://drkoturovic.me/assets/images/favicon-navbar-black-480.png">
 	<meta property="og:locale" content="sr_ME">
@@ -37,6 +37,11 @@
 		<link rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
 	</noscript>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
 
 	<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-zelena.css">
 	<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional-ljubicasta-svetlija.css">
@@ -139,7 +144,49 @@
 			}
 		}
 
+		/* Typography Hierarchy Overrides */
+		h1,
+		h2,
+		h3,
+		h4,
+		.display-1,
+		.display-2,
+		.display-5,
+		.mbr-section-title,
+		.card-title,
+		.panel-title-edit,
+		.footer-heading-text {
+			font-family: 'Spectral', serif !important;
+		}
 
+		h1,
+		.display-1,
+		.display-2 {
+			letter-spacing: -0.02em;
+			line-height: 1.1 !important;
+		}
+
+		h2,
+		h3,
+		h4,
+		.display-5 {
+			letter-spacing: -0.01em;
+			line-height: 1.2 !important;
+		}
+
+		body,
+		p,
+		a,
+		span,
+		button,
+		.display-4,
+		.display-7,
+		.mbr-text,
+		.nav-link,
+		.btn,
+		.vision-test-block {
+			font-family: 'Inter Tight', sans-serif !important;
+		}
 	</style>
 </head>
 
@@ -211,10 +258,15 @@
 				<div class="col-12 col-md-12 col-lg-10">
 					<div class="text-wrapper align-center">
 						<!-- Main Page Title -->
-						<h1 class="mbr-section-title mbr-fonts-style mb-5 text-pri text-center align-center"
-							style="line-height: 1.4; font-size: 3rem; text-align: center; padding-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
-							<strong>Novosti i zbivanja</strong>
+						<h1 class="mbr-section-title mbr-fonts-style mb-3 text-pri text-center align-center"
+							style="line-height: 1.4; font-size: 3rem; text-align: center;">
+							<strong>Novosti</strong>
 						</h1>
+						<h3 class="mbr-section-subtitle mbr-fonts-style mb-5 text-primary text-center align-center mx-auto"
+							style="line-height: 1.5; font-size: 1.15rem; text-align: center; max-width: 760px; padding-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1);">
+							Dnevna bolnica za oftalmologiju OFTALENS DR KOTUROVIĆ u korak sa najsavremenijim zbivanjima
+							u oftalmologiji.
+						</h3>
 
 						<!-- Start of Article 1 -->
 						<div class="article-meta mb-3" style="color: #666; font-size: 0.95rem; text-align: center;">
@@ -291,14 +343,17 @@
 				padding-right: 2px !important;
 				max-width: 100% !important;
 			}
+
 			#novosti-gallery .row {
 				margin-left: -2px !important;
 				margin-right: -2px !important;
 			}
+
 			#novosti-gallery .col-6 {
 				padding: 2px !important;
 				margin-bottom: 0 !important;
 			}
+
 			#novosti-gallery .image-wrapper {
 				margin-bottom: 0 !important;
 			}
