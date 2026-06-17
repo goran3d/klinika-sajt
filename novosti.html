@@ -596,6 +596,86 @@
 
 		</div>
 	</section>
+
+	<!-- Gallery Lightbox Modal -->
+	<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content bg-transparent border-0">
+				<div class="modal-header border-0 pb-0 justify-content-end" style="position: absolute; right: 0; top: 0; z-index: 1055;">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white; border-radius: 50%; opacity: 0.8; margin: 15px; padding: 12px;"></button>
+				</div>
+				<div class="modal-body text-center p-0 d-flex justify-content-center align-items-center" style="position: relative;">
+					<!-- Left Arrow -->
+					<button id="modalPrev" type="button" class="btn btn-link text-white position-absolute start-0 top-50 translate-middle-y text-decoration-none" style="z-index: 1055; opacity: 0.8; padding: 20px; box-shadow: none !important; outline: none !important;">
+						<span class="carousel-control-prev-icon" aria-hidden="true" style="width: 3rem; height: 3rem;"></span>
+					</button>
+
+					<img id="modalImage" src="" alt="Gallery Image" style="max-height: 90vh; width: auto; max-width: 100%; border-radius: 12px;">
+
+					<!-- Right Arrow -->
+					<button id="modalNext" type="button" class="btn btn-link text-white position-absolute end-0 top-50 translate-middle-y text-decoration-none" style="z-index: 1055; opacity: 0.8; padding: 20px; box-shadow: none !important; outline: none !important;">
+						<span class="carousel-control-next-icon" aria-hidden="true" style="width: 3rem; height: 3rem;"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Only target images in the main gallery
+			var galleries = document.querySelectorAll("#novosti-gallery .image-wrapper img");
+			var modalImage = document.getElementById("modalImage");
+			var btnPrev = document.getElementById("modalPrev");
+			var btnNext = document.getElementById("modalNext");
+			var currentIndex = 0;
+			var imagesList = [];
+			
+			if (galleries && modalImage) {
+				galleries.forEach(function(img, index) {
+					imagesList.push(img.src);
+					img.style.cursor = "zoom-in";
+					img.style.transition = "transform 0.3s ease";
+					
+					// Optional hover effect
+					img.addEventListener("mouseenter", function() { this.style.transform = "scale(1.03)"; });
+					img.addEventListener("mouseleave", function() { this.style.transform = "scale(1)"; });
+					
+					img.setAttribute("data-bs-toggle", "modal");
+					img.setAttribute("data-bs-target", "#imageModal");
+					img.addEventListener("click", function() {
+						currentIndex = index;
+						modalImage.src = imagesList[currentIndex];
+					});
+				});
+
+				// Navigation handlers
+				if (btnPrev && btnNext && imagesList.length > 0) {
+					btnPrev.addEventListener("click", function(e) {
+						e.stopPropagation(); // prevent modal from closing if clicked
+						currentIndex = (currentIndex > 0) ? currentIndex - 1 : imagesList.length - 1;
+						modalImage.src = imagesList[currentIndex];
+					});
+
+					btnNext.addEventListener("click", function(e) {
+						e.stopPropagation();
+						currentIndex = (currentIndex < imagesList.length - 1) ? currentIndex + 1 : 0;
+						modalImage.src = imagesList[currentIndex];
+					});
+
+					// Keyboard navigation
+					document.addEventListener("keydown", function(e) {
+						var modalElement = document.getElementById('imageModal');
+						if (modalElement && modalElement.classList.contains('show')) {
+							if (e.key === "ArrowLeft") btnPrev.click();
+							if (e.key === "ArrowRight") btnNext.click();
+						}
+					});
+				}
+			}
+		});
+	</script>
+
 	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/smoothscroll/smooth-scroll.js"></script>
 	<script src="assets/dropdown/js/navbar-dropdown.js"></script>
