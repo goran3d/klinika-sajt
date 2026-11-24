@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Design Tokens — Oftalens Dr Koturović (drkoturovic.me)
+   Dual-theme CSS custom properties + approved Plan 1 proportional scale.
+   ========================================================================== */
+
+:root {
+  /* Palette: Violet Theme (ljubicasta — default) */
+  --bg-surface: #f9f5ff;
+  --bg-white: #ffffff;
+  --bg-dark: #492868;
+
+  --text-main: #1f1f1f;
+  --text-heading: #000000;
+  --text-subtle: #6b6b6b;
+
+  --color-primary: #8012c3;
+  --color-primary-hover: #a50ec4;
+  --color-accent-dark: #df84ff;
+  --color-accent-bar: #df84ff;
+  --color-link-dark: #ffd7ef;
+  --color-text-dark: #d1c7dd;
+  --color-white: #ffffff;
+
+  --border-subtle: rgba(0, 0, 0, 0.1);
+  --border-divider: #e4e4e4;
+  --border-card: rgba(0, 0, 0, 0.04);
+
+  --shadow-nav: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.04);
+
+  --switch-knob: #a57aff;
+  --switch-dot-violet: #a57aff;
+  --switch-dot-green: #90ee90;
+
+  /* Typography */
+  --font-heading: 'Spectral', Georgia, serif;
+  --font-body: 'Inter Tight', system-ui, -apple-system, sans-serif;
+
+  --scale-hero: clamp(2rem, 2.8vw + 1.1rem, 2.75rem);             /* 32px -> 44px */
+  --scale-h2: clamp(1.625rem, 1.8vw + 0.95rem, 2rem);             /* 26px -> 32px */
+  --scale-h3: clamp(1.125rem, 0.6vw + 0.95rem, 1.3125rem);        /* 18px -> 21px */
+  --scale-body: clamp(0.96875rem, 0.25vw + 0.9rem, 1.03125rem);   /* 15.5px -> 16.5px */
+  --scale-ui: clamp(0.9375rem, 0.2vw + 0.875rem, 0.975rem);       /* 15px -> 15.6px */
+  --scale-footer: 0.9375rem;                                      /* 15px */
+
+  /* Layout & Geometry */
+  --nav-height-desktop: 64px;
+  --nav-height-mobile: 54px;
+  --container-max: 1140px;
+
+  --radius-card: 1rem;       /* 16px */
+  --radius-media: 0.875rem;  /* 14px */
+  --radius-btn: 0.625rem;    /* 10px */
+
+  --space-section-top: 6rem; /* 96px */
+  --space-section-y: 3.5rem; /* 56px */
+  --space-card: 1.5rem 1.75rem;
+}
+
+/* Palette: Green Theme (zelena) */
+html[data-theme="zelena"] {
+  --bg-surface: #edefeb;
+  --bg-dark: #2e481a;
+
+  --color-primary: #2e6f0a;
+  --color-primary-hover: #1f4d06;
+  --color-accent-dark: #9fe870;
+  --color-accent-bar: #98e36a;
+  --color-link-dark: #b9f094;
+  --color-text-dark: #d0ddc7;
+
+  --switch-knob: #90ee90;
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --space-section-top: 5rem;
+    --space-section-y: 2.75rem;
+    --space-card: 1.25rem;
+  }
+}
